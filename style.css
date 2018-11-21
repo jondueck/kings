@@ -101,3 +101,22 @@ footer {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #fff;
+  background: #444;
+}
+
+::selection {
+  background: #444;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #444;
+  color: #fff;
+}
