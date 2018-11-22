@@ -36,12 +36,20 @@ body {
   text-align: left;
 }
 
-.menu tr {
-  border-botom: 1px solid #eee;
+.menu td {
+  padding-bottom: 1.5rem;
+  vertical-align: top;
 }
 
-.menu td {
-  padding-bottom: 1rem;
+@media (max-width: 640px) {
+  .menu tr {
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu td {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 }
 
 header {
@@ -60,10 +68,15 @@ h1 {
   /* font-family: 'henderson-slab-basic', sans-serif; */
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 3rem;
   line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h1 span {
